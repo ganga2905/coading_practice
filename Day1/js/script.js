@@ -1,34 +1,99 @@
-/*1.
+// 1.
 
-Reverse a string without using reverse().
+// Reverse a string without using reverse().
 
-Input: "hello"
-Output: "olleh"
-2.
+// Input: "hello"
+// Output: "olleh"
 
-Find the largest number in an array.
+let name="hello";
 
-Input: [10, 20, 50, 80, 30]
-Output: 80
-3.
+let output='';
 
-Count the number of vowels in a string.
+for(let i=0;i<name.length;i++){
+    output+=name[i]
+}
 
-Input: "javascript"
-Output: 3
-4.
+console.log(output);
 
-Check whether a string is a palindrome.
 
-Input: "madam"
-Output: true
-5.
+// 2.
 
-Find the second largest number in an array.
+// Find the largest number in an array.
 
-Input: [10, 20, 50, 80, 30]
-Output: 50
-6.
+// Input: [10, 20, 50, 80, 30]
+// Output: 80
+
+let a=[10, 20, 50, 80, 30];
+
+let max=a[0];
+
+for(let i=0;i<a.length;i++){
+    if(max<a[i]){
+        max=a[i]
+    }
+}
+console.log(max);
+
+
+// 3.
+// Count the number of vowels in a string.
+
+// Input: "javascript"
+// Output: 3
+
+ let nameV="javascript";
+
+ let vowels=["a","e","i","o","u","A","E","I","O","U"];
+
+
+ let count=0;
+
+
+ for(let i=0;i<nameV.length;i++){
+    for(let k=0;k<vowels.length;k++){
+        if(nameV[i]==vowels[k]){
+            count++
+        }
+    }
+
+ }
+
+ console.log(count);
+ 
+// 4.
+
+// Check whether a string is a palindrome.
+
+// Input: "madam"
+// Output: true
+ 
+let palinName="madam";
+
+let result='';
+
+for(let i=palinName.length-1;i>=0;i--){
+    result+=palinName[i]
+}
+if(palinName==result){
+    console.log(true);
+    
+}
+else{
+    console.log(false);
+    
+}
+
+// 5.
+
+// Find the second largest number in an array.
+
+// Input: [10, 20, 50, 80, 30]
+// Output: 50
+
+
+
+
+/*6.
 
 Remove duplicate elements from an array without using Set.
 
