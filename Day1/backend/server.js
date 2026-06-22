@@ -9,11 +9,11 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/about',(req,res)=>{
-    res.status('About Page')
+    res.send('About Page')
 })
 
 app.get('/Contact',(req,res)=>{
-    res.status('Conatct page')
+    res.send('Conatct page')
 })
 
 
