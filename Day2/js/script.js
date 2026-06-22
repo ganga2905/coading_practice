@@ -3,7 +3,7 @@
 // Output: 120;
 
 let num=5;
-let output=1
+let output=1;
 
 for(let i=1;i<=5;i++){
     output=output*i

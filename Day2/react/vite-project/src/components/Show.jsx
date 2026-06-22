@@ -6,9 +6,9 @@ const Show = () => {
 
     const[password,setPassword]=useState(false);
 
-
   return (
     <div>
+
         <input type={password?"type":"password"} 
         placeholder='Enter the name'/><br/>
         <button onClick={()=>setPassword(!password)}>

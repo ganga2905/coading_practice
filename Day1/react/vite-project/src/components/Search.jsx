@@ -9,7 +9,9 @@ const Search = () => {
     const filterFruit=fruits.filter((fruit)=>(
         fruit.toLowerCase().includes(search.toLowerCase())
 
-    ))
+    ));
+
+    
 
 
   return (
