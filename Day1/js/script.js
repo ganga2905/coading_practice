@@ -90,23 +90,35 @@ else{
 // Input: [10, 20, 50, 80, 30]
 // Output: 50
 
-
 let numSec=[10, 20, 50, 80, 30];
 
 
 
 
+// 6.
+
+// Remove duplicate elements from an array without using Set.
+
+// Input: [1,2,2,3,4,4,5]
+// Output: [1,2,3,4,5]
 
 
+let numDuplicate=[1,2,2,3,4,4,5];
+
+let dupilcate=[];
+
+for(let i=0;i<numDuplicate.length;i++){
+     if(!dupilcate.includes(a=numDuplicate[i])){
+        dupilcate.push(numDuplicate[i])
+
+     }
+
+}
+
+console.log(dupilcate);
 
 
-/*6.
-
-Remove duplicate elements from an array without using Set.
-
-Input: [1,2,2,3,4,4,5]
-Output: [1,2,3,4,5]
-7.
+/*7.
 
 Find the frequency of each element in an array.
 
