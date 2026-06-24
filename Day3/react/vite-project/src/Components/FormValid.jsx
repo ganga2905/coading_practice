@@ -66,7 +66,7 @@ const FormValid = () => {
             name='password'
              onChange={handleChange}/>
             <br/>
-            <button>submit</button>
+            <button type='submit'>submit</button>
 
         </form>
         <h2>{error}</h2>
