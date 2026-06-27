@@ -10,7 +10,8 @@ const Crud = () => {
         if(!name) return
 
 
-        
+
+
 
 
 
@@ -30,6 +31,9 @@ const Crud = () => {
         />
         <button  onClick={handleSubmit}>Add</button>
 
+{
+    user
+}
 
 
     </div>

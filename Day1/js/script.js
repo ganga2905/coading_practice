@@ -90,9 +90,13 @@ else{
 // Input: [10, 20, 50, 80, 30]
 // Output: 50
 
-let numSec=[10, 20, 50, 80, 30];
+// let numSec=[10, 20, 50, 80, 30];
+// let 
+
+// for(let i=0;i<numSec.length;i++){
 
 
+// }
 
 
 // 6.
@@ -108,38 +112,70 @@ let numDuplicate=[1,2,2,3,4,4,5];
 let dupilcate=[];
 
 for(let i=0;i<numDuplicate.length;i++){
-     if(!dupilcate.includes(a=numDuplicate[i])){
+     if(!dupilcate.includes(numDuplicate[i])){
         dupilcate.push(numDuplicate[i])
 
      }
 
 }
-
 console.log(dupilcate);
 
 
-/*7.
+// 7.
 
-Find the frequency of each element in an array.
+// Find the frequency of each element in an array.
 
-Input: ["apple","banana","apple","orange","apple"]
-8.
+// Input: ["apple","banana","apple","orange","apple"];
 
-Move all zeros to the end of an array.
+let fruits=["apple","banana","apple","orange","apple"];
 
-Input: [1,0,2,0,3,4,0]
-Output: [1,2,3,4,0,0,0]
+for(let i=0;i<fruits.length;i++){
+    i
+}
+
+
+
+/*
+// 8.
+
+// Move all zeros to the end of an array.
+
+// Input: [1,0,2,0,3,4,0]
+// Output: [1,2,3,4,0,0,0]
+
+
 9.
 
-Find the missing number.
+// Find the missing number.
 
-Input: [1,2,3,5]
-Output: 4
-10.
+// Input: [1,2,3,5]
+// Output: 4
 
-Find common elements between two arrays.
+let num=[1,2,3,5];
 
-arr1 = [1,2,3,4]
-arr2 = [3,4,5,6]
 
-Output: [3,4]*/
+
+
+// 10.
+
+// Find common elements between two arrays.
+
+// arr1 = [1,2,3,4]
+// arr2 = [3,4,5,6]
+
+// Output: [3,4]
+
+let arr1 = [1,2,3,4];
+let arr2 = [3,4,5,6]
+let common=[];
+
+for( let i=0;i<arr1.length;i++){
+    for(let k=0;k<arr2.length;k++){
+        if(arr1[i]==arr2[k]){
+            common[common.length]=arr1[i]
+        }
+    }
+}
+console.log(common);
+
+*/
