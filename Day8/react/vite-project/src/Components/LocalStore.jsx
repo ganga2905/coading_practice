@@ -26,8 +26,8 @@ const LocalStore = () => {
         
         localStorage.setItem('userData',JSON.stringify(user))
 
-       setgetdata(localStorage.getItem(JSON.parse(userData)))
-
+        const data=JSON.parse(localStorage.getItem("userData"));
+        setgetdata(data)
 
     }
 
@@ -52,10 +52,12 @@ return (
     onChange={handleChange}/><br/>
     <button type='submit'>submit</button>
 </form>
-<h1>{getdata}</h1>
+<h1>{getdata &&  
+  <h2>{getdata.name},{getdata.email},{getdata.password}</h2>
+  }
+  </h1>
 
 </>
-  )
-}
+)}
 
 export default LocalStore
